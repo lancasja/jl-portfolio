@@ -6,10 +6,6 @@ $base-font-size: 18px;
 $font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
 
 // BASE STYLES
-.container {
-	max-width: 1200px;
-}
-
 body {
 	font-family: $font-family;
 	font-size: $base-font-size;
@@ -29,4 +25,8 @@ h2 {
 
 a:hover, a:focus {
 	text-decoration: none;
+}
+
+.container {
+	position: relative;
 }

@@ -64,66 +64,88 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 
 /* line 9, ../sass/_base.scss */
-.container {
-  max-width: 1200px;
-}
-
-/* line 13, ../sass/_base.scss */
 body {
   font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
   font-size: 18px;
 }
 
-/* line 18, ../sass/_base.scss */
+/* line 14, ../sass/_base.scss */
 h1 {
   font-size: 400%;
 }
 
-/* line 22, ../sass/_base.scss */
+/* line 18, ../sass/_base.scss */
 h2 {
   font-size: 200%;
 }
 
-/* line 26, ../sass/_base.scss */
+/* line 22, ../sass/_base.scss */
 .splash {
   color: #DD5849;
 }
 
-/* line 30, ../sass/_base.scss */
+/* line 26, ../sass/_base.scss */
 a:hover, a:focus {
   text-decoration: none;
 }
 
-/* line 2, ../sass/_main-heading.scss */
+/* line 30, ../sass/_base.scss */
+.container {
+  position: relative;
+}
+
+/* line 4, ../sass/_main-heading.scss */
 .header {
   border-bottom: 2px solid rgba(85, 85, 85, 0.17);
 }
+@media screen and (min-width: 1000px) {
+  /* line 4, ../sass/_main-heading.scss */
+  .header {
+    padding-bottom: 40px;
+  }
+}
 
-/* line 6, ../sass/_main-heading.scss */
+/* line 12, ../sass/_main-heading.scss */
 .hgroup {
   text-align: center;
   margin-top: 40px;
 }
-/* line 10, ../sass/_main-heading.scss */
+@media screen and (min-width: 1000px) {
+  /* line 12, ../sass/_main-heading.scss */
+  .hgroup {
+    text-align: right;
+    float: left;
+  }
+}
+/* line 21, ../sass/_main-heading.scss */
 .hgroup h1 {
   color: #8A8A8A;
 }
-/* line 14, ../sass/_main-heading.scss */
+/* line 25, ../sass/_main-heading.scss */
 .hgroup h2 {
   color: #424242;
 }
 
-/* line 21, ../sass/_main-heading.scss */
+/* line 32, ../sass/_main-heading.scss */
 .social-links {
   text-align: center;
   margin: 40px 0;
 }
-/* line 25, ../sass/_main-heading.scss */
+@media screen and (min-width: 1000px) {
+  /* line 32, ../sass/_main-heading.scss */
+  .social-links {
+    margin: 0;
+    position: absolute;
+    right: 0;
+    bottom: 40px;
+  }
+}
+/* line 43, ../sass/_main-heading.scss */
 .social-links a {
   font-size: 24px;
   color: #8A8A8A;
 }
-/* line 29, ../sass/_main-heading.scss */
+/* line 47, ../sass/_main-heading.scss */
 .social-links a:nth-child(2) {
   margin: 0 60px;
 }
@@ -151,8 +173,9 @@ a:hover, a:focus {
 /* line 1, ../sass/_main-nav.scss */
 .nav-links {
   text-align: center;
+  margin-top: 40px;
 }
-/* line 3, ../sass/_main-nav.scss */
+/* line 5, ../sass/_main-nav.scss */
 .nav-links a {
   display: inline-block;
   border: 2px solid #8A8A8A;
@@ -161,16 +184,16 @@ a:hover, a:focus {
   border-radius: 4px;
   transition: all 0.3s ease;
 }
-/* line 11, ../sass/_main-nav.scss */
+/* line 13, ../sass/_main-nav.scss */
 .nav-links a:nth-child(2) {
   margin: 0 80px;
 }
-/* line 15, ../sass/_main-nav.scss */
+/* line 17, ../sass/_main-nav.scss */
 .nav-links a.active {
   color: #DD5849;
   border-color: #DD5849;
 }
-/* line 20, ../sass/_main-nav.scss */
+/* line 22, ../sass/_main-nav.scss */
 .nav-links a:hover:not(.active), .nav-links a:focus:not(.active) {
   opacity: 0.6;
 }

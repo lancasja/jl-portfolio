@@ -1,11 +1,22 @@
+$desktop-break: 1000px;
+
 // MAIN HEADING
 .header {
 	border-bottom: 2px solid rgba(85, 85, 85, 0.17);
+
+	@media screen and (min-width: $desktop-break) {
+		padding-bottom: 40px;
+	}
 }
 
 .hgroup {
 	text-align: center;
 	margin-top: 40px;
+
+	@media screen and (min-width: $desktop-break) {
+		text-align: right;
+		float: left;
+	}
 
 	h1 {
 		color: $light-font-color;
@@ -21,6 +32,13 @@
 .social-links {
 	text-align: center;
 	margin: 40px 0;
+
+	@media screen and (min-width: $desktop-break) {
+		margin: 0;
+		position: absolute;
+		right: 0;
+		bottom: 40px;
+	}
 
 	a {
 		font-size: 24px;
