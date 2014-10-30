@@ -1,0 +1,17 @@
+.section {
+	max-width: 1000px;
+}
+
+.feature {
+	padding: 60px 0;
+
+	.feature-contents {
+		text-align: center;
+
+		i.fa {
+			font-size: 444%;
+			margin-bottom: 20px;
+			color: $light-font-color;
+		}
+	}
+}

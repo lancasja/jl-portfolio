@@ -1,0 +1,24 @@
+.nav-links {
+	text-align: center;
+	a {
+		display: inline-block;
+		border: 2px solid $light-font-color;
+		padding: 10px 24px;
+		color: $light-font-color;
+		border-radius: 4px;
+		transition: all 0.3s ease;
+
+		&:nth-child(2) {
+			margin: 0 80px;
+		}
+
+		&.active {
+			color: $splash-color;
+			border-color: $splash-color;
+		}
+
+		&:hover:not(.active), &:focus:not(.active) {
+			opacity: 0.6;
+		}
+	}
+}

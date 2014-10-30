@@ -1,0 +1,32 @@
+// VARIABLES
+$light-font-color: #8A8A8A;
+$dark-font-color: #424242;
+$splash-color: #DD5849;
+$base-font-size: 18px;
+$font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+
+// BASE STYLES
+.container {
+	max-width: 1200px;
+}
+
+body {
+	font-family: $font-family;
+	font-size: $base-font-size;
+}
+
+h1 {
+	font-size: 400%;
+}
+
+h2 {
+	font-size: 200%;
+}
+
+.splash {
+	color: $splash-color;
+}
+
+a:hover, a:focus {
+	text-decoration: none;
+}
